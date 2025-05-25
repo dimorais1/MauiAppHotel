@@ -4,14 +4,14 @@
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource AzulMarinhoEscuro}">
+             BackgroundColor="{StaticResource Black}">
 
     <Grid RowDefinitions="Auto,Auto,*">
         <HorizontalStackLayout Grid.Row="0" Padding="10" HorizontalOptions="Start">
             <Button x:Name="Bt_voltar_mainpage" Text="Voltar"
-                    TextColor="{StaticResource OffWhite}"
-                    BackgroundColor="{StaticResource AzulMarinhoEscuro2}"
-                    BorderColor="{StaticResource AzulMarinhoEscuro2}"
+                    TextColor="{StaticResource AzulMarinhoEscuro}"
+                    BackgroundColor="{StaticResource Gray300}"
+                    BorderColor="{StaticResource White}"
                     Clicked="Bt_voltar_mainpage_Clicked"/>
         </HorizontalStackLayout>
 
@@ -25,16 +25,16 @@
        FontSize="Medium"
        HorizontalOptions="Center"
        HorizontalTextAlignment="Center"
-       TextColor="{StaticResource OffWhite}" />
+       TextColor="{StaticResource yellow}" />
                 </VerticalStackLayout>
             </Frame>
 
             <Frame Padding="15" BackgroundColor="{StaticResource CinzaChumbo2}" CornerRadius="10">
                 <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
                     <Label Text="Desenvolvido por" FontFamily="Bitter" FontSize="Medium" HorizontalOptions="Center" TextColor="{StaticResource OffWhite}" />
-                    <Label Text="Thiago Domingos Dos Santos" FontFamily="Bitter" FontSize="Medium" HorizontalOptions="Center" TextColor="{StaticResource OffWhite}" />
+                    <Label Text="Bruno de Morais Araújo" FontFamily="Bitter" FontSize="Medium" HorizontalOptions="Center" TextColor="{StaticResource OffWhite}" />
                     <Label Text="2025" FontFamily="Bitter" FontSize="Medium" HorizontalOptions="Center" TextColor="{StaticResource OffWhite}" />
-                    <Label Text="Git: https://github.com/MineThiago4" FontFamily="Bitter" FontSize="Medium" HorizontalOptions="Center" TextColor="{StaticResource OffWhite}" />
+                    <Label Text="Git: https://github.com/dimorais1" FontFamily="Bitter" FontSize="Medium" HorizontalOptions="Center" TextColor="{StaticResource OffWhite}" />
                     
                 </VerticalStackLayout>
             </Frame>

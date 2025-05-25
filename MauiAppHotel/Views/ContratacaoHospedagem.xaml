@@ -4,7 +4,7 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource AzulMarinhoEscuro}">
+             BackgroundColor="{StaticResource Black}">
 
     
     
@@ -15,9 +15,9 @@
         <HorizontalStackLayout VerticalOptions="Start" Padding="10" Spacing="10">
             
             <Button x:Name="Bt_sobre" Text="Sobre" 
-                    TextColor="{StaticResource OffWhite}" 
-                    BackgroundColor="{StaticResource AzulMarinhoEscuro2}" 
-                    BorderColor="{StaticResource AzulMarinhoEscuro2}"
+                    TextColor="{StaticResource AzulMarinhoEscuro}" 
+                    BackgroundColor="{StaticResource Gray300}" 
+                    BorderColor="{StaticResource Gray300}"
                     Clicked="Bt_sobre_Clicked"/>
 
         </HorizontalStackLayout>

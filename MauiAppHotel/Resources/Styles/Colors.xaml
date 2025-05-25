@@ -13,6 +13,7 @@
     <Color x:Key="AzulMarinhoEscuro">#0A192F</Color>
     <Color x:Key="AzulMarinhoEscuro2">#001F3F</Color>
     <Color x:Key="CinzaChumbo2">#343A40</Color>
+    <Color x:Key="yellow">#FFFF00</Color>
 
 
     <Color x:Key="Primary">#512BD4</Color>
