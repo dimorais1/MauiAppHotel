@@ -2,11 +2,70 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
+             Title="HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10" Spacing="10">
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="Check Out"
+            TextColor="{StaticResource LaranjaG}"
+            FontFamily="Bitter"
+            FontSize="50"
+            HorizontalTextAlignment="Center"/>
+
+
+        <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo2}">
+            <VerticalStackLayout>
+                <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo}" BorderColor="{StaticResource CinzaChumbo}">
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <HorizontalStackLayout>
+                            <Label Text="Adultos:" 
+                           TextColor="{StaticResource OffWhite}"/>
+                            <Label Text="2" 
+                           TextColor="{StaticResource LaranjaG}"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Crianças:" 
+                           TextColor="{StaticResource OffWhite}"/>
+                            <Label Text="2" 
+                           TextColor="{StaticResource LaranjaG}"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo}" BorderColor="{StaticResource CinzaChumbo}">
+                    <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="auto, auto">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Check-In" TextColor="{StaticResource OffWhite}"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Check-Out" TextColor="{StaticResource OffWhite}"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="Estadia" TextColor="{StaticResource OffWhite}"/>
+
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="07/11/2001" TextColor="{StaticResource LaranjaG}"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="10/11/2001" TextColor="{StaticResource LaranjaG}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="4" TextColor="{StaticResource LaranjaG}"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Margin="10" BackgroundColor="{StaticResource CinzaChumbo}" BorderColor="{StaticResource CinzaChumbo}">
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Label Text="Valor Total: " 
+                       TextColor="{StaticResource OffWhite}"/>
+                        <Label Text="R$: 500.0"
+                       TextColor="{StaticResource LaranjaG}"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </Frame>
+        <Button Text="Voltar"
+                Clicked="Button_Clicked_Voltar"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource AzulMarinhoEscuro}"
+                BackgroundColor="{StaticResource Gray300}"
+                BorderColor="{StaticResource Gray300}"/>
+
     </VerticalStackLayout>
 </ContentPage>

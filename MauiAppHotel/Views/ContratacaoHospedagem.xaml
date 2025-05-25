@@ -5,19 +5,15 @@
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Black}">
-
-    
-    
-    
     
     <VerticalStackLayout>
         
         <HorizontalStackLayout VerticalOptions="Start" Padding="10" Spacing="10">
             
             <Button x:Name="Bt_sobre" Text="Sobre" 
-                    TextColor="{StaticResource AzulMarinhoEscuro}" 
-                    BackgroundColor="{StaticResource Gray300}" 
-                    BorderColor="{StaticResource Gray300}"
+                    TextColor="{StaticResource AzulMarinhoEscuro}"
+                    BackgroundColor="{StaticResource Gray300}"
+                    BorderColor="{StaticResource White}"
                     Clicked="Bt_sobre_Clicked"/>
 
         </HorizontalStackLayout>
@@ -74,7 +70,8 @@
                                TextColor="{StaticResource LaranjaG}"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
                 </Frame>
 
@@ -89,6 +86,7 @@
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
@@ -100,7 +98,11 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" TextColor="{StaticResource OffWhite}" BackgroundColor="{StaticResource LaranjaG}" BorderColor="{StaticResource LaranjaG}"  />
+                <Button Text="Avançar"
+                        Clicked="Button_Clicked_Avancar"
+                        TextColor="{StaticResource OffWhite}" 
+                        BackgroundColor="{StaticResource LaranjaG}" 
+                        BorderColor="{StaticResource LaranjaG}"  />
 
             </VerticalStackLayout>
         </Frame>
